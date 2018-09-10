@@ -1,20 +1,22 @@
+//include the library
 #include  <iostream>
 using namespace std;
 char toUpper(char);
 char toLower(char);
+//declare the main function
 int main()
 {
 	char ch;
 	char chf;
 	cout<<"Enter a letter of the alphabet."<<endl;
 	cin>>ch;
-	if((int)ch>=65&&(int)ch<=91)
+	if((int)ch>=65&&(int)ch<=91)//if an upper case alphabet
 	{
 		chf=toLower(ch);
 		cout<<"The inputted character "<<ch<<" was an upper case alphabet."<<endl;
 		cout<<"After conveting its case it is "<<chf<<endl;
 	}
-	else if((int)ch>=97&&(int)ch<=122)
+	else if((int)ch>=97&&(int)ch<=122)//if a lower case alphabet
 	{
 		chf=toUpper(ch);
 		cout<<"The inputted character "<<ch<<" was a lower case alphabet."<<endl;
@@ -22,10 +24,12 @@ int main()
 	}
 	return 0;
 }
+//function to convert into the lower case
 char toLower(char c)
 {
 	return (char)((int)c+32);
 }
+//function to convert into the upper case
 char toUpper(char c)
 {
 	return (char)((int)c-32);
