@@ -1,7 +1,9 @@
+//include the library
 #include <iostream>
 using namespace std;
 int findMin(int,int);
 void findMinimum(int&,int&,int&);
+//decalre the main function
 int main()
 {
 	int n1,n2=0;
@@ -22,6 +24,7 @@ int main()
 	cout<<"The minimum is "<<min<<endl;
 	return 0;
 }
+//function to calculate the minimum using call by value
 int findMin(int a, int b)
 {
 	if(a<b)
@@ -29,6 +32,7 @@ int findMin(int a, int b)
 	else
 	return b;
 }
+//function to calculate the minimum using call by reference
 void findMinimum(int& a, int& b, int& min)
 {
 	if(a<b)
