@@ -1,9 +1,11 @@
+//include the library
 #include <iostream>
 using namespace std;
 int sumEvenNumbers(int,int);
 int sumOddNumbers(int,int);
 int sumSquareEvenNumbers(int,int);
 int sumSquareOddNumbers(int,int);
+//declare the main function
 int main()
 {
 	int n1,n2=0;
