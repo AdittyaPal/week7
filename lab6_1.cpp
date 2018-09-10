@@ -1,9 +1,12 @@
+//include the library
 #include <iostream>
 #include <cstring>
 using namespace  std;
+//declaring the function prototypes
 float read(string);
 float calculate(float,float,float);
 void display(float,float,float,float,float);
+//declare the main function
 int main()
 {
 	float unitCost=read("cost of per unit.");
@@ -14,6 +17,7 @@ int main()
 	display(unitCost,unitsPurch,taxRate,salesTax,totalDue);
 	return 0;
 }
+//function to read the inputs form the user
 float read(string str)
 {
 	float value;
@@ -21,10 +25,12 @@ float read(string str)
 	cin>>value;
 	return value;
 }
+//function to calcualte the slaes tax
 float calculate(float price,float units,float rate)
 {
 	return (price*units*rate/100.0f);
 }
+//function to display the details in the terminal
 void display(float c,float u,float r,float t, float p)
 {
 	cout<<"The number of units purchased at the rate of Rs "<<c<<" per unit is "<<u<<endl;
