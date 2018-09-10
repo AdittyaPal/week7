@@ -1,7 +1,9 @@
+//include the library
 #include <iostream>
 using namespace std;
 int add(int,int);
 void findSum(int&,int&,int&);
+//declare the main function
 int main()
 {
 	cout<<"Using call by value."<<endl;
@@ -22,11 +24,13 @@ int main()
 	cout<<"The sum of the two numbers is "<<result<<endl;
 	return 0;
 }
+//function to calculate the sum using call by value
 int add(int a, int b)
 {	
 	int sum=a+b;
 	return sum;
 }
+//function to calculate the sum using call by reference
 void findSum(int& a,int& b,int& sum)
 {
 	sum=a+b;
