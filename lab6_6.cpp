@@ -52,8 +52,11 @@ int sumSquareEvenNumbers(int x,int y)
 	i=x;
 	else
 	i=x+1;
-	for(;i<=y;i+=2)
-	sum+=(i*i);
+	while(i<=y)
+	{
+		sum+=(i*i);
+		i+=2;
+	}
 	return sum;
 }
 int sumSquareOddNumbers(int x,int y)
@@ -63,7 +66,10 @@ int sumSquareOddNumbers(int x,int y)
 	i=x;
 	else
 	i=x+1;
-	for(;i<=y;i+=2)
-	sum+=(i*i);
+	while(i<=y)
+	{
+		sum+=(i*i);
+		i+=2;
+	}
 	return sum;
 }
